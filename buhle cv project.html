@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Buhle Mdlongwa Portfolio</title>
+  <meta name="description" content="Buhle Mdlongwa — Designer, Developer, and storyteller building children's edtech and animated comedy." />
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #4f46e5;
+      --radius: 14px;
+      --max: 1100px;
+      --shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 60%);
+      color: #0F172A;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.5;
+      padding: 32px 16px;
+    }
+    .container { max-width: var(--max); margin: 0 auto; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    nav a { margin-left: 18px; text-decoration: none; color: inherit; font-size: 15px; }
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      background: var(--accent);
+      color: #fff;
+    }
+    .hero h1 { font-size: 32px; font-weight: 700; }
+    .accent { color: var(--accent); }
+    .lead { font-size: 16px; margin-top: 8px; color: var(--muted); }
+    .cards { display: flex; gap: 16px; margin-top: 24px; }
+    .card, .profile-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 16px;
+      flex: 1;
+    }
+    .tag {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      margin-right: 6px;
+    }
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .two-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .contact {
+      background: var(--card);
+      padding: 24px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-top: 24px;
+    }
+    footer {
+      margin-top: 32px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div>
+          <div style="font-weight:700">Buhle Mdlongwa</div>
+          <div style="font-size:13px; color: var(--muted);">Developer · Designer · Storyteller</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="#">Download CV</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Hello — I'm <span class="accent">Buhle</span></h1>
+        <p class="lead">I design playful educational apps and craft short animated comedy for children. I combine clean UI, delightful illustrations, and effective storytelling to build experiences for toddlers and young learners.</p>
+
+        <div style="margin-top:18px; display:flex; gap:12px; align-items:center">
+          <a class="btn" href="#projects">View Projects</a>
+          <a href="#contact" style="color: var(--muted); text-decoration: underline;">Let's collaborate →</a>
+        </div>
+
+<div class="cookie-popup" id="cookie-popup">
+    <h4>We use cookies</h4>
+    <p>This site uses cookies to enhance your experience. By continuing to browse this site, you accept our use of
+      cookies.</p>
+    <div class="cookie-buttons">
+      <button class="accept" onclick="acceptCookies()">Accept</button>
+      <button class="decline" onclick="declineCookies()">Decline</button>
+    </div>
+  </div>
+
+  <button class="cookie-manager-btn" id="cookie-manager-btn" onclick="showCookiePopup()">
+    <img src="../img/cookie.svg" alt="">
+  </button>
+
+        <div class="cards">
+          <div class="card">
+            <div style="font-size:12px; color:var(--muted)">Role</div>
+            <div style="font-weight:700">Product Designer</div>
+          </div>
+          <div class="card">
+            <div style="font-size:12px; color:var(--muted)">Availability</div>
+            <div style="font-weight:700">Freelance</div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="profile-card">
+            <img src="https://images.unsplash.com/photo-154400513-94ddf0286df2?w=1200&q=60" alt="profile" style="width:100%; border-radius: var(--radius);" />
+            <div style="margin-top:12px">
+              <div style="font-size:13px; color:var(--muted)">Selected Highlight</div>
+              <div style="font-weight:700; margin-top:6px">Toddler Bible App — 2025</div>
+              <div style="margin-top:8px; font-size:14px; color:var(--muted)">Created story experiences, interactive quizzes, and songs for ages 0–6.</div>
+              <div style="margin-top:12px">
+                <span class="tag">UX</span>
+                <span class="tag">Flutter</span>
+                <span class="tag">Audio</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="two-grid">
+          <div>
+            <p>I'm a creative technologist focused on building digital experiences for children — Bible stories, interactive games, and animated short stories. A web developer passionate about clean design and functionality, I work across the product lifecycle: concept, scripts, voice direction, sound design, and front-end implementation.</p>
+            <p>I am currently studying Bachelor of Science in Computing, building responsive and modern websites. Skilled in HTML, JavaScript, CSS, and other programming tools such as C++, Python, Git, and MySQL. I love bringing ideas to life in the browser.</p>
+            <div style="font-size:12px; color:var(--muted)">Tools I Use</div>
+
+          <div style="font-weight:700; font-size:16px">Let's build something together</div>
+          <div style="color: var(--muted); margin-top:8px">
+            Available for full-time, part-time employment, freelance, and collaborations — especially children's edtech and short story comedy animations.
+          </div>
+
+          <form onsubmit="event.preventDefault();alert('Message sent (placeholder)')" style="margin-top:16px; display:grid; grid-template-columns:1fr; gap:12px">
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea name="message" placeholder="Tell me about your project" rows="4" required></textarea>
+            <button type="submit" style="padding:10px; border-radius:8px; border:0; background:var(--accent); color:#fff; font-weight:700">Send Message</button>
+          </form>
+
+          <div style="font-size:13px; margin-top:12px">
+            Or email me at <a href="mailto:mdlongwabuhle@gmail.com" style="color:var(--accent); text-decoration:underline">mdlongwabuhle@gmail.com</a>
+<div class="contact-me">
+
+        <h2>Get In Touch</h2>
+        <h3>Feel free to contact me on.</h3>
+        <img class="telephone" src="icons/telephone.png" alt="telephone-img" </p>+27 84 6955 561</p> 
+        <p class="contact-message">If you've got open source projects and pull requests you'd like me to be a part of send me an </p>
+        <a class="btn" href="mailto:mdlongwabuhle@gmail.com">E-Mail</a>
+
+        <hr class="horizontal-rule-2">
+
+      </div>
+    </div>          
+</div>
+        </div>
+      </section>
+
+      <footer>
+
+    <div class="three">
+      <a class="footer-link" href="https://www.linkedin.com/in/buhle-mdlongwa/">LinkedIn</a> |
+      <a class="footer-link" href="https://twitter.com/BuhleM2011">Twitter</a> |
+      <a class="footer-link" href="https://github.com/mkaNdlovu">Portfolio</a>
+      <br>
+      <p class="copyright"> All rights reserved, designed by <strong>Buhle Mdlongwa - Built with Love.</strong> 
+        © <span id="year"></span> </p>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
